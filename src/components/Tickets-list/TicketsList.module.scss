@@ -1,0 +1,14 @@
+.tickets-list {
+  list-style-type: none;
+
+  &__back-top {
+    height: 40px;
+    width: 40px;
+    line-height: 40px;
+    border-radius: 4px;
+    background-color: #2196f3;
+    color: #fff;
+    text-align: center;
+    font-size: 24px;
+  }
+}

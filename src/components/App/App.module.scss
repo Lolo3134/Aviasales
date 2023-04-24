@@ -1,0 +1,44 @@
+@import '../../assets/variables.module';
+
+.app {
+  max-width: 960px;
+  margin: 0 auto;
+  padding: 0 103px;
+  padding-bottom: 50px;
+  background: $app-background;
+
+  @media (max-width: 900px) {
+    padding: 0 50px;
+  }
+
+  @media (max-width: 450px) {
+    padding: 0 15px;
+  }
+
+  &__logo {
+    display: block;
+    margin: 0 auto;
+    padding: 50px 0;
+  }
+
+  &__content {
+    display: flex;
+
+    @media (max-width: 700px) {
+      flex-direction: column;
+    }
+  }
+}
+
+.filters-wrapper {
+  margin-right: 20px;
+
+  @media (max-width: 700px) {
+    margin-right: 0;
+    margin-bottom: 20px;
+  }
+}
+
+.product-list {
+  flex-grow: 1;
+}
