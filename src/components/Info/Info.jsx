@@ -52,8 +52,11 @@ const Info = ({ segments }) => {
       <div className={cn('flyght-info')}>
         <div className={cn('flyght-info__item')}>
           <span className={cn('flyght-info__text')}>
-            {flyghtTo.origin} –{flyghtTo.destination}
+            {flyghtTo.origin}
+            –
+            {flyghtTo.destination}
           </span>
+          {/* eslint-disable-next-line max-len */}
           <span className={cn('flyght-info__description')}>{timeFormatter(flyghtTo.date, flyghtTo.duration)}</span>
         </div>
         <div className={cn('flyght-info__item')}>
@@ -68,8 +71,12 @@ const Info = ({ segments }) => {
       <div className={cn('flyght-info')}>
         <div className={cn('flyght-info__item')}>
           <span className={cn('flyght-info__text')}>
-            {flyghtFrom.origin} –{flyghtFrom.destination}
+            {flyghtFrom.origin}
+            {' '}
+            –
+            {flyghtFrom.destination}
           </span>
+          {/* eslint-disable-next-line max-len */}
           <span className={cn('flyght-info__description')}>{timeFormatter(flyghtFrom.date, flyghtFrom.duration)}</span>
         </div>
         <div className={cn('flyght-info__item')}>

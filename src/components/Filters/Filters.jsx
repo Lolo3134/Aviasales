@@ -18,10 +18,7 @@ const FILTERS = [
 
 const Filters = ({
   // eslint-disable-next-line react/prop-types
-  activeFilters,
-  transfers,
-  setFilterChecked,
-  setTransfers,
+  activeFilters, transfers, setFilterChecked, setTransfers,
 }) => {
   const toogleCheckBox = ({ target }) => {
     if (target.name === 'all-transfer') {

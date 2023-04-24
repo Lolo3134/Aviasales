@@ -16,7 +16,11 @@ const Ticket = ({ ticket }) => {
   return (
     <li className={cn('ticket')}>
       <div className={cn('ticket__header')}>
-        <span className={cn('ticket__price')}>{price.toLocaleString()} P</span>
+        <span className={cn('ticket__price')}>
+          {price.toLocaleString()}
+          {' '}
+          P
+        </span>
         <img alt='Aviacompany logo' src={`http://pics.avs.io/99/36/${carrier}.png`} />
       </div>
       <Info segments={segments} />
