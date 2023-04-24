@@ -13,8 +13,8 @@ const cn = classNames.bind(styles);
 
 const App = () => (
   <div className={cn('app')}>
-    <a href='/'>
-      <img alt='Logo Aviasales' className={cn('app__logo')} src={logo} />
+    <a href="/">
+      <img alt="Logo Aviasales" className={cn('app__logo')} src={logo} />
     </a>
     <div className={cn('app__content')}>
       <div className={cn('filters-wrapper')}>

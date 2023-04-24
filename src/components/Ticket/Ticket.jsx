@@ -21,7 +21,7 @@ const Ticket = ({ ticket }) => {
           {' '}
           P
         </span>
-        <img alt='Aviacompany logo' src={`http://pics.avs.io/99/36/${carrier}.png`} />
+        <img alt="Aviacompany logo" src={`http://pics.avs.io/99/36/${carrier}.png`} />
       </div>
       <Info segments={segments} />
     </li>

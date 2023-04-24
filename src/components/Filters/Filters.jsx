@@ -61,7 +61,7 @@ const Filters = ({
         className={cn('filters__input')}
         data-transfers={idx}
         name={item.name}
-        type='checkbox'
+        type="checkbox"
         onChange={toogleCheckBox}
       />
       <span className={cn('filters__checkbox')} />

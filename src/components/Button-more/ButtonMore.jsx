@@ -13,7 +13,7 @@ const ButtonMore = ({ showMoreTickets, take }) => {
   const count = take + 5;
 
   return (
-    <button className={cn('button-more')} type='button' onClick={() => showMoreTickets(count)}>
+    <button className={cn('button-more')} type="button" onClick={() => showMoreTickets(count)}>
       Показать больше билетов
     </button>
   );

@@ -56,7 +56,7 @@ const TicketsList = ({
     <>
       {isLoading && <Spinner />}
       {ticketsList.length === 0 ? (
-        <Alert showIcon message='Рейсов, подходящих под заданные фильтры, не найдено' type='info' />
+        <Alert showIcon message="Рейсов, подходящих под заданные фильтры, не найдено" type="info" />
       ) : (
         <>
           <ul className={cn('tickets-list')}>{ticketsList}</ul>

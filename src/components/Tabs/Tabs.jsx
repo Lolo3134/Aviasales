@@ -13,16 +13,16 @@ const Tabs = ({ activeTab, onTabClick }) => (
   <div className={cn('tabs')}>
     <button
       className={cn('tabs__tab', { 'tabs__tab--active': activeTab === 'funniest' })}
-      name='funniest'
-      type='button'
+      name="funniest"
+      type="button"
       onClick={onTabClick}
     >
       Самый дешевый
     </button>
     <button
       className={cn('tabs__tab', { 'tabs__tab--active': activeTab === 'faster' })}
-      name='faster'
-      type='button'
+      name="faster"
+      type="button"
       onClick={onTabClick}
     >
       Самый быстрый

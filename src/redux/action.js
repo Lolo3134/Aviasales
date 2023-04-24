@@ -1,4 +1,4 @@
-import Api from '../servises/api';
+import Api from '../services/api';
 
 const { getSearchId, getTickets } = new Api();
 
