@@ -11,9 +11,7 @@ export default class Api {
 
     this.getTickets = async (searchId) => {
       try {
-        const response = await axios.get(
-          `https://aviasales-test-api.kata.academy/tickets?searchId=${searchId}`,
-        );
+        const response = await axios.get(`https://aviasales-test-api.kata.academy/tickets?searchId=${searchId}`);
         const { tickets, stop } = await response.data;
 
         return [tickets, stop];

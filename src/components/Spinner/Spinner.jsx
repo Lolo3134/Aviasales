@@ -8,7 +8,7 @@ const cn = classNames.bind(styles);
 
 const Spinner = () => (
   <div className={cn('spinner-wrapper')}>
-    <Spin size="large" tip="Загружаем оставшиеся билеты" />
+    <Spin size='large' tip='Загружаем оставшиеся билеты' />
   </div>
 );
 

@@ -20,7 +20,7 @@ function sortTickets(tickets, take, activeTab, transfers) {
     return sortedTickets
       .sort(
         // eslint-disable-next-line max-len
-        (a, b) => a.segments[0].duration + a.segments[1].duration - (b.segments[0].duration + b.segments[1].duration),
+        (a, b) => a.segments[0].duration + a.segments[1].duration - (b.segments[0].duration + b.segments[1].duration)
       )
       .filter((ticket) => transfers.includes(ticket.segments[0].stops.length))
       .slice(0, take);
@@ -33,8 +33,16 @@ function sortTickets(tickets, take, activeTab, transfers) {
 }
 
 const TicketsList = ({
-// eslint-disable-next-line react/prop-types
-  searchId, getSearchId, getTickets, stop, isLoading, tickets, activeTab, take, transfers,
+  // eslint-disable-next-line react/prop-types
+  searchId,
+  getSearchId,
+  getTickets,
+  stop,
+  isLoading,
+  tickets,
+  activeTab,
+  take,
+  transfers,
 }) => {
   useEffect(() => {
     getSearchId();
@@ -56,7 +64,7 @@ const TicketsList = ({
     <>
       {isLoading && <Spinner />}
       {ticketsList.length === 0 ? (
-        <Alert showIcon message="Рейсов, подходящих под заданные фильтры, не найдено" type="info" />
+        <Alert showIcon message='Рейсов, подходящих под заданные фильтры, не найдено' type='info' />
       ) : (
         <>
           <ul className={cn('tickets-list')}>{ticketsList}</ul>
@@ -70,9 +78,7 @@ const TicketsList = ({
   );
 };
 
-const mapStateToProps = ({
-  tickets, searchId, activeTab, stop, isLoading, take, transfers,
-}) => ({
+const mapStateToProps = ({ tickets, searchId, activeTab, stop, isLoading, take, transfers }) => ({
   searchId,
   stop,
   activeTab,
